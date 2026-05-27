@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #0f172a;
+  background: linear-gradient(to right, #0f172a, #1e3a8a);
+}
+
+/* HEADER */
+.header {
+  background: #0f172a;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* MAIN CONTAINER */
+.about-container {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 20px;
+}
+
+.about-container h1 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.about-container p {
+  line-height: 1.8;
+  font-size: 18px;
+  color: #fff;
+}

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="../CSSs/ContactUs.css" />
+  </head>
+  <body>
+    <section id="contact" class="section">
+      <h1 class="contactUsH1">Contact Me</h1>
+
+      <form class="contact-form" id="contact-form">
+        <input type="text" name="from_name" placeholder="Your Name" required />
+
+        <input
+          type="email"
+          name="from_email"
+          placeholder="Your Email"
+          required
+        />
+
+        <textarea name="message" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <div class="links">
+      <a href="#">
+        <p>
+          Follow Me On Instagram
+          <i class="fa-brands fa-instagram mediaIcon"></i>
+        </p>
+      </a>
+
+      <a href="#">
+        <p>
+          Follow Me On Facebook
+          <i class="fa-brands fa-facebook mediaIcon"></i>
+        </p>
+      </a>
+
+      <div class="manageLinks">
+        <a href="#">
+          <p>Privacy Policy</p>
+        </a>
+      </div>
+
+      <div class="manageLinks">
+        <a href="#">
+          <p>Manage Cookies</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- SUCCESS MODAL -->
+    <div id="successModal" class="modal">
+      <div class="modal-content">
+        <h2>✅ Message Sent</h2>
+        <p>Your message was sent successfully!</p>
+
+        <button onclick="closeModal()">OK</button>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/8b6dfb3e6b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="../JSs/ContactUs.js"></script>
+  </body>
+</html>

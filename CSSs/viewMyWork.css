@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  color: white;
+
+  /* gradient background */
+  background: linear-gradient(120deg, #87ceeb, #001f3f);
+  background-size: 300% 300%;
+  animation: bg 8s infinite;
+}
+
+/* animation */
+@keyframes bg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* LIST */
+.work-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.work-list li {
+  margin: 20px 0;
+}
+
+/* LINKS */
+.work-list a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+/* underline effect (hidden by default) */
+.work-list a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: white;
+  transition: 0.3s;
+}
+
+/* hover animation */
+.work-list a:hover::after {
+  width: 100%;
+}
